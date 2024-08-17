@@ -3,7 +3,7 @@ from datetime import datetime
 class Post(object):
     def __init__(self, text, timestamp=None):
         self.text = text
-        self.timestamp = timestamp 
+        self.timestamp = timestamp or datetime.now()
         self.user = None
 
     def set_user(self, user):
